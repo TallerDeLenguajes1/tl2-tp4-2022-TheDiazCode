@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Registro Clientes</h1>
+
+<form asp-controller="Home" asp-action="CrearCliente">
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej. Exequiel Diaz">
+    </div>
+    <div class="mb-3">
+        <label for="telefono" class="form-label">telefono</label>
+        <input type="text" class="form-control" id="telefono" name="telefono" placeholder="381 123 45 67">
+    </div>
+    <div class="mb-3">
+        <label for="domicilio" class="form-label">domicilio</label>
+        <input type="text" class="form-control" id="domicilio" name="domicilio" placeholder="Av Roca">
+    </div>
+    <button type="submit" class="btn btn-primary">Registrar</button>
+</form>
